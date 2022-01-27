@@ -13,3 +13,6 @@
     margin-left: 5px;
     margin-top: 5px;
 }
+.table th:last-child {
+    text-align: right;
+}

@@ -1,12 +1,13 @@
 import React from 'react';
 import './shopping-cart-table.css';
 import {useDispatch, useSelector} from "react-redux";
-import { bookAddedToCart, bookRemovedFromCart, allBooksRemovedFromCart } from "../../actions";
+import {bookAddedToCart, bookRemovedFromCart, allBooksRemovedFromCart} from "../../actions";
 
 
-const ShoppingCartTable = ({ onIncrease, onDecrease, onDelete }) => {
+const ShoppingCartTable = ({onIncrease, onDecrease, onDelete}) => {
 
-  const { cartItems: items, orderTotal: total } = useSelector(state => state);
+  const {cartItems: items, orderTotal: total} = useSelector(state => state);
+  const totalRound = +total.toFixed(2);
 
   const dispatch = useDispatch();
 
@@ -16,12 +17,13 @@ const ShoppingCartTable = ({ onIncrease, onDecrease, onDelete }) => {
 
   const renderRow = (item, idx) => {
     const {id, title, count, total} = item;
+    const totalRound = +total.toFixed(2);
     return (
       <tr key={id}>
         <td>{idx + 1}</td>
         <td>{title}</td>
         <td>{count}</td>
-        <td>{total}</td>
+        <td>{totalRound}</td>
         <td>
           <button className="btn btn-outline-danger btn-sm float-right"
                   onClick={() => onDelete(id)}>
@@ -54,17 +56,16 @@ const ShoppingCartTable = ({ onIncrease, onDecrease, onDelete }) => {
         </thead>
 
         <tbody>
-        { items.map(renderRow) }
+        {items.map(renderRow)}
         </tbody>
       </table>
 
       <div className="total">
-        Total: {total}
+        Total: {totalRound}
       </div>
     </div>
   );
 };
-
 
 
 export default ShoppingCartTable;
