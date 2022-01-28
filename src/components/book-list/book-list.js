@@ -1,21 +1,21 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import BookListItem from "../book-list-item/book-list-item";
 import './book-list.css';
-import {useDispatch, useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import withBookstoreService from "../hoc/with-bookstore-service";
-import {booksLoaded, booksRequested, booksError, bookAddedToCart} from "../../actions";
+import { booksLoaded, booksRequested, booksError, bookAddedToCart } from "../../actions";
 import Spinner from "../spinner/spinner";
 import ErrorIndicator from "../error-indicator/error-indicator";
 
 
-const BookList = ({books, onAddedToCart}) => {
+const BookList = ({ books, onAddedToCart }) => {
     return <ul className="book-list">
         {
             books.map((book) => {
                 return (
-                    <li key={book.id}>
-                        <BookListItem book={book}
-                                      onAddedToCart={() => onAddedToCart(book.id)}/>
+                    <li key={  book.id }>
+                        <BookListItem book={ book }
+                                      onAddedToCart={ () => onAddedToCart(book.id) } />
                     </li>
                 )
             })
@@ -23,7 +23,7 @@ const BookList = ({books, onAddedToCart}) => {
     </ul>
 }
 
-const BookListContainer = ({bookstoreService}) => {
+const BookListContainer = ({ bookstoreService }) => {
 
     const {books, loading, error} = useSelector(state => state);
     const dispatch = useDispatch();
@@ -44,18 +44,18 @@ const BookListContainer = ({bookstoreService}) => {
     if (loading) {
         return (
             <div className="spinner-div">
-                <Spinner/>
+                <Spinner />
             </div>
         )
     }
 
     if (error) {
-        return <ErrorIndicator/>
+        return <ErrorIndicator />
     }
 
     return <BookList books={books}
                      onAddedToCart={(id) => onAddedToCart(id)}
-                     loading={loading}/>
+                     loading={loading} />
 };
 
 export default withBookstoreService()(BookListContainer);

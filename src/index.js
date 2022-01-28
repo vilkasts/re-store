@@ -13,14 +13,14 @@ import store from "./store";
 const bookstoreService = new BookstoreService();
 
 ReactDOM.render(
-  <Provider store={store}>
-    <ErrorBoundry>
-      <MyContext.Provider value={bookstoreService}>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </MyContext.Provider>
-    </ErrorBoundry>
-  </Provider>,
-  document.getElementById('root')
+    <Provider store={ store }>
+        <ErrorBoundry>
+            <MyContext.Provider value={ bookstoreService }>
+                <BrowserRouter>
+                    <App />
+                </BrowserRouter>
+            </MyContext.Provider>
+        </ErrorBoundry>
+    </Provider>,
+    document.getElementById('root')
 );
