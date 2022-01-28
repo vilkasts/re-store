@@ -36,6 +36,76 @@ export default class BookstoreService {
       price: 33.99,
       coverImage: 'https://st.litnet.com/uploads/covers/220/1616694042_61.jpg'
     },
+    {
+      id: 6,
+      title: 'Ведмак',
+      author: 'Игорь Орлов',
+      price: 29.99,
+      coverImage: 'https://img-gorod.ru/23/126/2312670_detail.jpg'
+    },
+    {
+      id: 7,
+      title: 'The Concise Mastery',
+      author: 'Robert Greene',
+      price: 27.99,
+      coverImage: 'https://img-gorod.ru/28/903/2890339_detail.jpg'
+    },
+    {
+      id: 8,
+      title: 'Dune',
+      author: 'Frank Herrbert',
+      price: 36.99,
+      coverImage: 'https://img-gorod.ru/27/051/2705149_detail.jpg'
+    },
+    {
+      id: 9,
+      title: 'Harry Potter and the Philosopher`s Stone',
+      author: 'J.K. Rowling',
+      price: 32.99,
+      coverImage: 'https://img-gorod.ru/24/446/2444651_detail.jpg'
+    },
+    {
+      id: 10,
+      title: 'Troy. Our Greatest Story Retold',
+      author: 'Stephen Fry',
+      price: 43.99,
+      coverImage: 'https://img-gorod.ru/28/900/2890088_detail.jpg'
+    },
+    {
+      id: 11,
+      title: 'Of Mice and Men',
+      author: 'John Steinbeck',
+      price: 47.99,
+      coverImage: 'https://img-gorod.ru/28/900/2890087_detail.jpg'
+    },
+    {
+      id: 12,
+      title: 'The Gunslinger',
+      author: 'Stephen King',
+      price: 28.99,
+      coverImage: 'https://img-gorod.ru/23/525/2352528_detail.jpg'
+    },
+    {
+      id: 13,
+      title: 'Misery',
+      author: 'Stephen King',
+      price: 27.99,
+      coverImage: 'https://img-gorod.ru/22/880/2288038_detail.jpg'
+    },
+    {
+      id: 14,
+      title: 'Red Sparrow',
+      author: 'Jason Statham',
+      price: 42.99,
+      coverImage: 'https://img-gorod.ru/28/905/2890571_detail.jpg'
+    },
+    {
+      id: 15,
+      title: 'Snug A Collection of Comics about Dating Your Best Friend',
+      author: 'Catana Comics',
+      price: 17.99,
+      coverImage: 'https://img-gorod.ru/28/906/2890624_detail.jpg'
+    },
   ];
 
   getBooks() {

@@ -12,3 +12,8 @@ li {
     height: 200px;
     width: 350px;
 }
+.spinner-div {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
