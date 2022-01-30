@@ -21,11 +21,11 @@ const BookList = ({ books, onAddedToCart }) => {
             })
         }
     </ul>
-}
+};
 
 const BookListContainer = ({ bookstoreService }) => {
 
-    const {books, loading, error} = useSelector(state => state);
+    const { books, loading, error } = useSelector(state => state);
     const dispatch = useDispatch();
     const onAddedToCart = (id) => dispatch(bookAddedToCart(id));
 

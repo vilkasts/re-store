@@ -3,24 +3,24 @@ export default class BookstoreService {
     data = [
         {
             id: 1,
-            title: 'Godel: A Life Of Logic',
-            author: 'Andy D. Ream',
+            title: 'The Mist',
+            author: 'Stephen King',
             price: 35.99,
-            coverImage: 'https://images-na.ssl-images-amazon.com/images/I/51jy5uAaHGL._SX331_BO1,204,203,200_.jpg'
+            coverImage: 'https://img-gorod.ru/28/904/2890462_detail.jpg'
         },
         {
             id: 2,
-            title: 'Give Me A Chance',
-            author: 'Iwill Notfail',
+            title: 'The North Water',
+            author: 'Ian McGuire',
             price: 27.99,
-            coverImage: 'https://m.media-amazon.com/images/I/513YmS6EgnL.jpg'
+            coverImage: 'https://img-gorod.ru/28/905/2890529_detail.jpg'
         },
         {
             id: 3,
-            title: 'Smart Junior',
-            author: 'Thatswhat Youneed',
+            title: 'Dancing With The Octopus',
+            author: 'Debora Harding',
             price: 42.99,
-            coverImage: 'https://studentsbook.net/upload/iblock/9f0/9f0e3d71041996f8367c7cac029e64a6.jpg'
+            coverImage: 'https://img-gorod.ru/28/904/2890401_detail.jpg'
         },
         {
             id: 4,
@@ -31,17 +31,17 @@ export default class BookstoreService {
         },
         {
             id: 5,
-            title: 'Ну возьми меня!',
-            author: 'Нара Боту',
+            title: 'Infernal City - Elder Scrolls!',
+            author: 'Greg Keyes',
             price: 33.99,
-            coverImage: 'https://st.litnet.com/uploads/covers/220/1616694042_61.jpg'
+            coverImage: 'https://img-gorod.ru/28/907/2890723_detail.jpg'
         },
         {
             id: 6,
-            title: 'Ведмак',
-            author: 'Игорь Орлов',
+            title: 'The Witcher. Blood Of Elves',
+            author: 'Andrzej Sapkowski',
             price: 29.99,
-            coverImage: 'https://img-gorod.ru/23/126/2312670_detail.jpg'
+            coverImage: 'https://m.media-amazon.com/images/I/41dhNAlYGML.jpg'
         },
         {
             id: 7,
