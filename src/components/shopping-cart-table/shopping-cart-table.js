@@ -4,16 +4,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { bookAddedToCart, bookRemovedFromCart, allBooksRemovedFromCart } from "../../actions";
 
 
-const ShoppingCartTable = ({ onIncrease, onDecrease, onDelete }) => {
+const ShoppingCartTable = () => {
 
     const { cartItems: items, orderTotal: total } = useSelector(state => state);
     const totalRound = +total.toFixed(2);
 
     const dispatch = useDispatch();
 
-    onIncrease = (id) => dispatch(bookAddedToCart(id));
-    onDecrease = (id) => dispatch(bookRemovedFromCart(id));
-    onDelete = (id) => dispatch(allBooksRemovedFromCart(id));
+    const onIncrease = (id) => dispatch(bookAddedToCart(id));
+    const onDecrease = (id) => dispatch(bookRemovedFromCart(id));
+    const onDelete = (id) => dispatch(allBooksRemovedFromCart(id));
 
     const renderRow = (item, idx) => {
         const { id, title, count, total } = item;

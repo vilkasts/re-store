@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ErrorIndicator = () => {
-    return <div>Error!</div>;
+    return <div>Oops, 404 :(</div>;
 };
 
 export default ErrorIndicator;
